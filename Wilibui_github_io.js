@@ -9,6 +9,7 @@ let minePng;
 let clockButton;
 let clockPng;
 
+
 function setup() {
   createCanvas(windowWidth, 3*windowHeight); 
   background(50);
