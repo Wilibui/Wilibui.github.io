@@ -6,6 +6,8 @@ let rainButton;
 let rainGif;
 let mineButton;
 let minePng;
+let clockButton;
+let clockPng;
 
 function setup() {
   createCanvas(windowWidth, 3*windowHeight); 
@@ -64,12 +66,25 @@ function setup() {
   mineButton.style('font-size', 3*w);
   mineButton.style("background-color", color(200));
   mineButton.style("color", color(0)); 
-  mineButton.mousePressed(Mine);
-  
+  mineButton.mousePressed(Mine);  
   //PNG
   minePng = createImg("Minesweeper.PNG");
   minePng.position(10*w, 56*h);
   minePng.size(20*w, 20*w);
+  
+  //Clock
+  //Button
+  clockButton = createButton('Clock');
+  clockButton.position(35*w, 45*h);
+  clockButton.size(20*w, 10*h);  
+  clockButton.style('font-size', 3*w);
+  clockButton.style("background-color", color(200));
+  clockButton.style("color", color(0)); 
+  clockButton.mousePressed(Clock);  
+  //PNG
+  clockPng = createImg("Clock.PNG");
+  clockPng.position(35*w, 56*h);
+  clockPng.size(20*w, 20*w);
 }
 
 
@@ -77,17 +92,21 @@ function draw() {
 }
 
 function Pong(){
-  window.open("https://wilibui.github.io/Pong/", "_self");
+  window.open("https://wilibui.github.io/Pong/");
 }
 
 function TheGameOfLife(){
-  window.open("https://wilibui.github.io/The-Game-Of-LIfe/", "_self");
+  window.open("https://wilibui.github.io/The-Game-Of-LIfe/");
 }
 
 function Rain(){
-  window.open("https://wilibui.github.io/Rain/", "_self");
+  window.open("https://wilibui.github.io/Rain/");
 }
 
 function Mine(){
-  window.open("https://wilibui.github.io/Minesweeper/", "_self");
+  window.open("https://wilibui.github.io/Minesweeper/");
+}
+
+function Clock(){
+  window.open("https://wilibui.github.io/Clock/");
 }
