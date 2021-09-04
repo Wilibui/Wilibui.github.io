@@ -8,7 +8,8 @@ let mineButton;
 let minePng;
 let clockButton;
 let clockPng;
-
+let golfButton;
+let golfPng;
 
 function setup() {
   createCanvas(windowWidth, 3*windowHeight); 
@@ -86,6 +87,20 @@ function setup() {
   clockPng = createImg("Clock.PNG");
   clockPng.position(35*w, 56*h);
   clockPng.size(20*w, 20*w);
+  
+  //Golf
+  //Button
+  clockButton = createButton('Golf');
+  clockButton.position(60*w, 45*h);
+  clockButton.size(15*w, 10*h);  
+  clockButton.style('font-size', 3*w);
+  clockButton.style("background-color", color(200));
+  clockButton.style("color", color(0)); 
+  clockButton.mousePressed(Golf);  
+  //PNG
+  clockPng = createImg("Golf.PNG");
+  clockPng.position(60*w, 56*h);
+  clockPng.size(15*w, 20*w);
 }
 
 
@@ -110,4 +125,8 @@ function Mine(){
 
 function Clock(){
   window.open("https://wilibui.github.io/Clock/");
+}
+
+function Golf(){
+  window.open("https://wilibui.github.io/Golf/");
 }
