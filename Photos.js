@@ -7,12 +7,12 @@ let RainPNG;
 let PNG;
 
 function loadPNG() {
-  MinePNG = loadImage("Mine.png");
+  MinePNG = loadImage("Mine.PNG");
   PongPNG = loadImage("Pong.gif");
   CGoLPNG = loadImage("CGoL.gif");
-  ClokPNG = loadImage("Clok.png");
-  GolfPNG = loadImage("Golf.png");
-  RainPNG = loadImage("Rain.png");
+  ClokPNG = loadImage("Clok.PNG");
+  GolfPNG = loadImage("Golf.PNG");
+  RainPNG = loadImage("Rain.PNG");
 }
 
 function showPNG(x, y, i) {
