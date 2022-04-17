@@ -37,6 +37,9 @@ class Button {
     case 5:
       this.name = "Rain";
       break;
+    case 6:
+      this.name = "Nonogram";
+      break;
     }
     text(this.name, this.x, this.y);
   }
@@ -61,6 +64,9 @@ class Button {
           break;
         case 5:
           Rain();
+          break;
+        case 6:
+          Nono();
           break;
         }
       }

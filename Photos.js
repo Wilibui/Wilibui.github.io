@@ -4,18 +4,22 @@ let GolfPNG;
 let PongPNG;
 let ClokPNG;
 let RainPNG;
+let NonoPNG;
 let PNG;
 
 function loadPNG() {
-  MinePNG = loadImage("Mine.PNG");
+  MinePNG = loadImage("Mine.png");
   PongPNG = loadImage("Pong.gif");
-  CGoLPNG = loadImage("CGoL.gif");
-  ClokPNG = loadImage("Clok.PNG");
-  GolfPNG = loadImage("Golf.PNG");
-  RainPNG = loadImage("Rain.PNG");
+  CGoLPNG = loadImage("CGoL.png");
+  ClokPNG = loadImage("Clok.png");
+  GolfPNG = loadImage("Golf.png");
+  RainPNG = loadImage("Rain.png");
+  GevaPNG = loadImage("Geva.png");
+  NonoPNG = loadImage("Nono.png");
 }
 
 function showPNG(x, y, i) {
+  PNG = GevaPNG;
   switch(i) {
   case 0:
     PNG = MinePNG;
@@ -34,6 +38,9 @@ function showPNG(x, y, i) {
     break;
   case 5:
     PNG = RainPNG;
+    break;
+  case 6:
+    PNG = NonoPNG;
     break;
   }
   image(PNG, x-0.9*w, y-0.9*w, 1.8*w, 1.8*w);
